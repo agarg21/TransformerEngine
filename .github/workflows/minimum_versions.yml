@@ -5,6 +5,8 @@
 # Verify that TE builds and imports against the minimum supported framework versions.
 name: 'Minimum supported versions'
 on:
+  push:
+    branches: [main, measure/main-fix]  # upstream PR: [main]; fork base branch added for measurement
   pull_request:
   workflow_dispatch:
 concurrency:
